@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title th:utext="${roomName}">Room</title>
+</head>
+<body>
+    <p id="status" th:utext="${bulbStatus}"></p>
+    <button id="switch" onclick="switchListener()">Switch</button>
+    <button onclick="shutdown()">Shutdown</button>
+    <script th:inline="javascript">
+        window.roomId = [[${roomId}]];
+    </script>
+    <script src="../room.js"></script>
+</body>
+</html>

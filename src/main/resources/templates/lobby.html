@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex; flex-direction: row">
+        <button onclick="searchListener()">Search</button>
+        <div style="margin-left: 20px">
+            <label for="roomName">Room name:</label><br>
+            <input type="text" id="roomName" name="roomName"><br>
+            <label for="country">Country:</label><br>
+            <input type="text" id="country" name="country"><br>
+            <button onclick="createListener()">Create</button>
+        </div>
+        <button onclick="shutdown()">Shutdown</button>
+    </div>
+
+
+       <div id="content">
+           <ul id="roomList" style="list-style-type:none"></ul>
+       </div>
+       <script src="lobby.js"></script>
+
+</body>
+</html>
